@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="toggle-button.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="colors.css">
+    <title>Abstractor</title>
+</head>
+
+<body>
+    <form id="settingsForm">
+        <p class="ui-label">Unify text appearance</p><label class="switch"
+            title="Click to enable/disable unification of text appearance"><input type="checkbox" id="unifyText"
+                name="unifyText"><span class="slider round"></span></label>
+        <fieldset id="lookAndFeel" name="loolAndFeel">
+            <legend>Look &amp; Feel</legend>
+            <table>
+                <tr>
+                    <td>
+                        <p class="ui-label">Font</p>
+                    </td>
+                    <td colspan="3"><select id="fontFamily" name="fontFamily" class="select-font"
+                            title="Click here to select the font for abstraction.">
+                            <option value='Arial, Helvetica, sans-serif' class="font font-arial">Arial, Helvertica,
+                                sans-serif</option>
+                            <option value='"Lucida Console", "Courier New", monospace' class="font font-courier">Courier
+                                New, monospace</option>
+                            <option value="Tahoma, Verdana, sans-serif" class="font font-tahoma">Tahoma, Verdana,
+                                sans-serif</option>
+                            <option value='Times New Roman", Times, serif' class="font font-times">Times New Roman,
+                                Times, serif</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="ui-label">Min</p>
+                    </td>
+                    <td><input type="number" id="minFontSize" name="minFontSize" min="8" max="128" value="12"
+                            title="Smallest allowable font size for all texts.&#10;Smaller font sizes will be increased to this size.">
+                    </td>
+
+                    <td>
+                        <p class="ui-label">Max</p>
+                    </td>
+                    <td><input type="number" id="maxFontSize" name="maxFontSize" min="8" max="128" value="16"
+                            title="Largest allowable font size for all texts.&#10;Larger fonts will be reduced to this size.">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p class="ui-label">Backgr.</p>
+                    </td>
+                    <td><select id="backgroundColorSelect" name="backgroundColorSelect" class="select-color"
+                            title="Click here to choose the background-color of page"></select>
+                        <div class="framed"> <canvas id="backgroundColorViewer" name="backgroundColorViewer"></canvas>
+                        </div>
+                    </td>
+
+                    <td>
+                        <p class="ui-label">Text</p>
+                    </td>
+                    <td><select id="foregroundColorSelect" name="foregroundColorSelect" class="select-color"
+                            title="Click here to choose the text-color of page"></select>
+                        <div class="framed"> <canvas id="foregroundColorViewer" name="foregroundColorViewer"></canvas>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Remove</legend>
+            <table>
+                <tr>
+                    <td>
+                        <p class="ui-label">Controls</p>
+                    </td>
+                    <td><label class="switch" title="Click to enable/disable removing textfields checkboxes etc."><input
+                                type="checkbox" id="removeControls" name="removeControls"><span
+                                class="slider round"></span></label></td>
+
+                    <td>
+                        <p class="ui-label">Images</p>
+                    </td>
+                    <td><label class="switch"
+                            title="Click to enable/disable removing images, videos, graphics etc."><input
+                                type="checkbox" id="removeImages" name="removeImages"><span
+                                class="slider round"></span></label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="ui-label">Tables</p>
+                    </td>
+                    <td><label class="switch" title="Click to enable/disable removing tables"><input type="checkbox"
+                                id="removeTables" name="removeTables"><span class="slider round"></span></label></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="ui-label">Styles</p>
+                    </td>
+                    <td><label class="switch" title="Click to enable/disable removing stylesheets"><input
+                                type="checkbox" id="removeStyles" name="removeStyles"><span
+                                class="slider round"></span></label>
+                    </td>
+                    <td>
+                        <p class="ui-label">Scripts</p>
+                    </td>
+                    <td><label class="switch" title="Click to enable/disable removing java scripts"><input
+                                type="checkbox" id="removeScripts" name="removeScripts"><span
+                                class="slider round"></span></label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <table class="centered-table">
+            <tr>
+                <td><button type="button" id="reloadButton" name="reloadButton" class="btn btn-save"
+                        title="Click here to reload page">Reload</button>
+                </td>
+                <td><button type="button" id="applyButton" name="applyButton" class="btn btn-apply"
+                        title="Click here to abstract the appearance of current page ">Apply</button></td>
+            </tr>
+        </table>
+    </form>
+    <script src="popup.js"></script>
+</body>
+
+</html>

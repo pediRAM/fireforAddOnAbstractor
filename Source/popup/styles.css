@@ -1,0 +1,285 @@
+/**********************************************************
+ * Project: Firefox add-on "Abstractor"                   *
+ * File: styles.css                                       *
+ * Author: Pedram GANJEH-HADIDI                           *
+ * Copyright (C)2024 by Pedram GANJEH-HADIDI              *
+ * Web: https://github.com/pediRAM/FirefoxAddOnAbstractor *
+ **********************************************************/
+body {
+    background-color: var(--body-bg-color);
+    padding: 0px 2px 2px 5px;
+    font-family: var(--font-family);
+    font-size: var(--ui-font-size);
+}
+
+table {
+    border: 0px;    
+    padding: 0px;
+    margin:  0px;
+}
+
+td th {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: var(--text-color);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 80%;
+}
+
+h4 {
+    color: var(--text-color);
+    text-align: left;
+    vertical-align: middle;
+}
+
+p {
+    color: var(--text-color);
+}
+
+.logo-img:hover {
+    filter: drop-shadow(0px 0px 20px lime);
+}
+
+.ui-label {
+    display: inline-block;
+    color: var(--text-color);
+    vertical-align: middle;
+    text-align: left;
+    font-size: var(--ui-font-size);;
+    margin-left: 5px;
+}
+
+input[type='number'] {
+    font-family: var(--font-family);
+    font-size: var(--ui-font-size);
+    color: var(--text-color);
+    background-color: var(--icon-bg-color);
+    border-color: var(--icon-border-color);
+    vertical-align: middle;
+    padding: var(--input-padding);
+    margin: var(--input-margin);
+    border-radius: var(--input-border-radius);
+    border-width: var(--input-border-width);
+    width: 52px;
+}
+
+/* input[type='text'] {
+    font-family: var(--font-family);
+    font-size: var(--ui-font-size);
+    color: var(--text-color);
+    background-color: var(--icon-bg-color);
+    border-color: var(--icon-border-color);
+    vertical-align: middle;
+    padding: var(--input-padding);
+    margin: var(--input-margin);
+    border-radius: var(--input-border-radius);
+    border-width: var(--input-border-width);
+    width: 200px;
+} */
+
+input[type='checkbox'] {
+    box-shadow: 3px 3px 3px #c2c2c2;
+}
+
+input:hover {
+    border-color: var(--icon-border-color);
+    mix-blend-mode: difference;
+}
+
+.centered-table {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.select-font {
+    /* width: 200px; */
+    max-width: 200px;
+}
+
+.select-font:hover {
+    border-color: var(--icon-border-color);
+    mix-blend-mode: difference;
+}
+
+a:visited {
+    color: var(--text-color);
+}
+
+.font {
+    color: var(--text-color);
+    font-size: var(--ui-font-size);
+    max-width: 260px;
+}
+
+.font-arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-courier {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.font-tahoma {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+.font-times {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+fieldset {
+    width: 95%;
+    padding-left: var(--fieldset-padding);
+    padding-right: var(--fieldset-padding);
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-left: 0%;
+    margin-right: 100%;
+    border-radius: 10px;
+    /* min-width: 350px; */
+    border-color: var(--icon-border-color);
+    background-color: var(--card-bg-color);
+}
+
+legend {
+    color: var(--text-color);
+    /* font-size: larger; */
+    padding-left: 5px;
+    padding-right: 25px;
+}
+
+
+.page-title {
+    text-align: center;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: val(--icon-bg-color);
+    color: val(--text-color);
+    padding: 2px, 15px 2px 15px;
+    
+}
+
+.page-title {
+    border-color: white;
+    mix-blend-mode: difference;
+}
+
+.btn-left {
+    text-align: left;
+}
+
+.btn-right {
+    text-align: right;
+}
+
+.btn {
+    margin: 5px 10px 5px 10px;
+    font-size: var(--ui-font-size); /* 18px */
+    color: white;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px black;
+}
+
+
+.btn-save {
+    display: none;
+    width: 0;
+    height: 0;
+    /* 
+    background-color: var(--action-bg-color);
+    border: 3px solid var(--action-bg-color-hover); 
+    */
+}
+/* 
+.btn-save:hover {
+    background-color: var(--action-bg-color-hover);
+} 
+*/
+
+.btn-apply {
+    background-color: var(--accept-bg-color);
+    border: 3px solid var(--accept-bg-color-hover);
+}
+
+.btn-apply:hover {
+    background-color: var(--accept-bg-color-hover);
+}
+
+
+canvas {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: var(--input-border-radius);
+    /*
+    border-color: var(--icon-border-color);
+    border-width: var(--input-border-width); */
+    background-color: var(--body-bg-color);
+    vertical-align: middle;
+}
+
+.framed {
+    display: none; /* inline-block; */
+    width: 30px;
+    height: 30px;
+    max-width: 90px;
+    max-height: 30px;
+    margin-left: 5px;
+    border: 3px solid var(--icon-border-color);
+    border-radius: var(--input-border-radius);
+    align-content: center;
+    vertical-align: middle;
+}
+
+select {
+    /* width: 230px; */
+    border-radius: var(--input-border-radius);
+    font-family: var(--font-family);
+    font-size: var(--ui-font-size);
+    color: var(--text-color);
+    background-color: var(--icon-bg-color);
+    border-color: var(--icon-border-color);
+    vertical-align: middle;
+    padding: var(--input-padding);
+    margin: var(--input-margin);
+    border-width: var(--input-border-width);
+}
+
+.select-color {
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--icon-border-color);
+    border-radius: 5px; 
+    background-color: var(--body-bg-color);
+    color: transparent;
+    vertical-align: middle;
+}
+
+.select-color:hover {
+    border-color: white;
+    mix-blend-mode: difference;
+}
+
+
+option {
+    display: block;
+    white-space: pre;
+}
+
+/* option:hover {
+    box-shadow: 0 0 10px transparent inset;
+} */

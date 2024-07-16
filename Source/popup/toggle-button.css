@@ -1,0 +1,72 @@
+/**********************************************************
+ * Project: Firefox add-on "Abstractor"                   *
+ * File: toggle-button.css                                *
+ * Author: Pedram GANJEH-HADIDI                           *
+ * Copyright (C)2024 by Pedram GANJEH-HADIDI              *
+ * Web: https://github.com/pediRAM/FirefoxAddOnAbstractor *
+ **********************************************************/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: var(--switch-width);
+  height: var(--switch-thumb-radius);
+  margin-left: 5px;
+  margin-right: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--off-bg-color);
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+input:checked+.slider {
+  background-color: var(--success-bg-color);
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px var(--success-bg-color);
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: var(--switch-thumb-radius);
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider:hover {
+  border-color: var(--icon-border-color);
+  mix-blend-mode: difference;
+}

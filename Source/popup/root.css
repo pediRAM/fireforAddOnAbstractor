@@ -1,0 +1,85 @@
+/* Root CSS */
+/* CSS Document */
+:root {
+
+    /* Green */
+    --success-bg-color: #04AA6D;
+    --success-hover-bg-color: #46a049;
+
+    /* Blue */
+    --info-bg-color: #2196F3;
+    --info-hover-bg-color: #0b7dda;
+
+    /* Orange */
+    --warning-bg-color: #ff9800;
+    --warning-hover-bg-color: #e68a00;
+
+    /* Red */ 
+    --danger-bg-color: #f44336;
+    --danger-hover-bg-color: #da190b;
+
+    /* Gray */
+    --default-bg-color: #e7e7e7;
+    --default-hover-bg-color: #ddd;
+    --default-color: black;
+
+    /******************************************/
+    
+    /* Body background color */
+    --body-bg-color: #0d0d0d;
+    
+    /* Card/GroupBox/FieldSet background color */
+    --card-bg-color: #171717;
+    
+    /* H1..H6/Paragraphs/Label/Text color */
+    --text-color: #e4e4e4;
+    
+    /* Simple flat icon/symbol background color */
+    --icon-bg-color: #2b2b2b;
+    
+    /*  Simple flat icon/symbol color */
+    --icon-color: #cccccc;
+    
+    /* Simple flat icon/symbol border color */
+    --icon-border-color: #363636;
+    
+    /* Accept/OK background color */
+    --accept-bg-color: #04d085;
+    --accept-bg-color-hover: #54b594;
+    --accept-border-color: #54b594;
+    
+    /* Error/Cancel/Not-OK background color */
+    --error-bg-color: #e45447;
+    --error-bg-color-hover: #e45447;
+    --error-border-color: #e45447;
+    
+    /* ON/Enabled/Activate background color */
+    --on-bg-color: #54b594;
+    
+    /* OFF/Disabled/Deactivate background color */
+    --off-bg-color: #e45447;
+    
+    /* Neutral Action (OK/Next/Set/Execute/...) background color */
+    --action-bg-color: #00a8e0;
+    --action-bg-color-hover: #008cba;
+
+    --input-padding: 2px;
+
+    --input-margin: 0px;
+
+    --input-border-radius: 5px;
+    --input-border-width: 3px;
+
+    --fieldset-padding: 3px;
+
+    --font-family: Arial, Helvetica, sans-serif;
+    --ui-font-size: 14px;
+
+    --switch-thumb-radius: 18px;
+    --switch-heigth: 18px;
+    
+    --switch-width: 40px;
+}
+html {
+    color-scheme: dark !important;
+}
